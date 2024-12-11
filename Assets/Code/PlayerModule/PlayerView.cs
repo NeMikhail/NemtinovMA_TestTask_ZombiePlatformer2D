@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Core.Interface;
 using System;
+using Constants;
 
 namespace PlayerModule
 {
@@ -15,6 +16,7 @@ namespace PlayerModule
         [SerializeField] private SpawnZone _leftSpawnZone;
         [SerializeField] private SpawnZone _rightSpawnZone;
         private Action<int> _onAmmoAdded;
+        private Action _onKilled;
         private int _direction;
         private string _viewID;
 
@@ -27,6 +29,17 @@ namespace PlayerModule
         public SpawnZone LeftSpawnZone { get => _leftSpawnZone; }
         public SpawnZone RightSpawnZone { get => _rightSpawnZone; }
         public Action<int> OnAmmoAdded { get => _onAmmoAdded; set => _onAmmoAdded = value; }
+        public Action OnKilled { get => _onKilled; set => _onKilled = value; }
         public int Direction { get => _direction; set => _direction = value; }
-        public string ViewID { get => _viewID; set => _viewID = value; }    }
+        public string ViewID { get => _viewID; set => _viewID = value; }
+        
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag == TagsConstantsManager.ENEMY_TAG)
+            {
+                OnKilled?.Invoke();
+            }
+        }
+    }
 }

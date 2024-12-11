@@ -15,6 +15,7 @@ namespace EnemyModule
         private SceneViewsContainer _sceneViewsContainer;
         private EnemyConfigsContainer _enemyConfigsContainer;
         private GameEventBus _gameEventBus;
+        private AudioController _audioController;
         private PlayerView _playerView;
         private Timer _timer;
         private System.Random _random;
@@ -22,11 +23,12 @@ namespace EnemyModule
 
         [Inject]
         public void Construct(SceneViewsContainer sceneViewsContainer, EnemyConfigsContainer enemyConfigsContainer,
-            GameEventBus gameEventBus)
+            GameEventBus gameEventBus, AudioController audioController)
         {
             _sceneViewsContainer = sceneViewsContainer;
             _enemyConfigsContainer = enemyConfigsContainer;
             _gameEventBus = gameEventBus;
+            _audioController = audioController;
         }
 
         public void Initialisation()
@@ -75,6 +77,7 @@ namespace EnemyModule
             _gameEventBus.OnObjectSpawnedFromPool += IstantiateAmmoBox;
             _gameEventBus.OnSpawnObjectFromPool?.Invoke(PrefabID.AmmoBox, enemyView.Object.transform.position);
             _gameEventBus.OnObjectSpawnedFromPool -= IstantiateAmmoBox;
+            _audioController.PlayDeathSound();
             enemyView.OnEnemyKilled -= KillEnemy;
         }
 

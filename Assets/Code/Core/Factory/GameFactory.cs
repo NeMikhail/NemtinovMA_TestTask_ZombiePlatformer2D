@@ -5,6 +5,7 @@ using PlayerModule;
 using System;
 using Zenject;
 using EnemyModule;
+using UIModule;
 
 namespace Core
 {
@@ -26,13 +27,14 @@ namespace Core
             InitializeGameCoreModule();
             InitializePlayerModule();
             InitializeEnemyModule();
+            InitializeUIModule();
         }
+
 
         private void InitializePresenter(IPresenter presenter)
         {
             _presenters.Add(presenter);
         }
-
 
         private void InitializeInputModule()
         {
@@ -66,6 +68,11 @@ namespace Core
         {
             EnemySpawnPresenter enemySpawnPresenter = _di.Resolve<EnemySpawnPresenter>();
             InitializePresenter(enemySpawnPresenter);
+        }
+        private void InitializeUIModule()
+        {
+            UIPresenter uIPresenter = _di.Resolve<UIPresenter>();
+            InitializePresenter(uIPresenter);
         }
 
     }

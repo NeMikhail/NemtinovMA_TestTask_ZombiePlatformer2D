@@ -14,6 +14,7 @@ namespace PlayerModule
         private PlayerModel _playerModel;
         private PlayerEventBus _playerEventBus;
         private GameEventBus _gameEventBus;
+        private AudioController _audioController;
         private WeaponModel _weaponModel;
         private PlayerState _currentState;
         private Timer _timer;
@@ -21,12 +22,13 @@ namespace PlayerModule
 
         [Inject]
         public void Construct(SceneViewsContainer sceneViewsContainer, PlayerModel playerModel,
-            PlayerEventBus playerEventBus, GameEventBus gameEventBus)
+            PlayerEventBus playerEventBus, GameEventBus gameEventBus, AudioController audioController)
         {
             _sceneViewsContainer = sceneViewsContainer;
             _playerModel = playerModel;
             _playerEventBus = playerEventBus;
             _gameEventBus = gameEventBus;
+            _audioController = audioController;
         }
 
         public void Initialisation()
@@ -62,10 +64,11 @@ namespace PlayerModule
 
         private void AddAmmo(int ammoCount)
         {
-            _weaponModel.AmmoCount = _weaponModel.AmmoCount + ammoCount;
+            _audioController.PlayPickUpSound();
+            _weaponModel.SetAmmoCount(_weaponModel.AmmoCount + ammoCount);
             if (_weaponModel.AmmoCount > _weaponModel.MaxAmmoCount)
             {
-                _weaponModel.AmmoCount = _weaponModel.MaxAmmoCount;
+                _weaponModel.SetAmmoCount(_weaponModel.MaxAmmoCount);
             }
         }
 
@@ -78,7 +81,8 @@ namespace PlayerModule
         {
             if (_weaponModel.AmmoCount > 0)
             {
-                _weaponModel.AmmoCount--;
+                _audioController.PlayShootSound();
+                _weaponModel.SetAmmoCount(_weaponModel.AmmoCount - 1);
                 _gameEventBus.OnObjectSpawnedFromPool += InitializeBullet;
                 _gameEventBus.OnSpawnObjectFromPool(_weaponModel.BulletPrefabID, _playerView.Weapon.transform.position);
                 _gameEventBus.OnObjectSpawnedFromPool -= InitializeBullet;
@@ -86,6 +90,7 @@ namespace PlayerModule
                 if (_weaponModel.AmmoCount == 0)
                 {
                     _playerEventBus.OnStateChangedFromOutside?.Invoke(PlayerState.Standing);
+                    _gameEventBus.OnGameOver?.Invoke();
                 }
             }
             

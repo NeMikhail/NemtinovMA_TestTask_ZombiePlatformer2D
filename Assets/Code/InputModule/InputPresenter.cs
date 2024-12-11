@@ -20,13 +20,27 @@ namespace InputModule
         public void PreInitialisation()
         {
             _controls = new GameControls();
-            _controls.Enable();
+            EnableInput();
+            _inputEventBus.OnEnableInput += EnableInput;
+            _inputEventBus.OnDisableInput += DisableInput;
             BindInput();
         }
 
         public void Cleanup()
         {
+            _inputEventBus.OnEnableInput -= EnableInput;
+            _inputEventBus.OnDisableInput -= DisableInput;
             UnbindInput();
+        }
+
+        private void EnableInput()
+        {
+            _controls.Enable();
+        }
+
+        private void DisableInput()
+        {
+            _controls.Disable();
         }
 
         private void BindInput()

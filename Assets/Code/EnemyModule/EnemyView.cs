@@ -30,7 +30,13 @@ namespace EnemyModule
             _speed = speed;
             _health = health;
             _playerView = playerView;
-
+            if (_object.transform.localScale.x < 0)
+            {
+                _object.transform.localScale =
+                    new Vector3(-1 * _object.transform.localScale.x,
+                    _object.transform.localScale.y,
+                    _object.transform.localScale.z);
+            }
             _movingRightScale = _object.transform.localScale;
             _movingLeftScale =
                 new Vector3(-1 * _object.transform.localScale.x,

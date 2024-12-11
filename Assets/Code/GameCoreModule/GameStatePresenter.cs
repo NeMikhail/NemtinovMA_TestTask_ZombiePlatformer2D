@@ -21,12 +21,16 @@ namespace GameCoreModule
         public void Initialisation()
         {
             _inputEventBus.OnPauseButtonDown += SetPauseState;
+            _gameEventBus.OnContinueGame += SetPlayingState;
+            _gameEventBus.OnGameOver += SetGameOverState;
             SetPlayingState();
         }
 
         public void Cleanup()
         {
             _inputEventBus.OnPauseButtonDown -= SetPauseState;
+            _gameEventBus.OnContinueGame -= SetPlayingState;
+            _gameEventBus.OnGameOver -= SetGameOverState;
         }
 
         private void SetPlayingState()
@@ -34,6 +38,7 @@ namespace GameCoreModule
             if (_currentGameState != GameState.PlayState)
             {
                 Time.timeScale = 1f;
+                _inputEventBus.OnEnableInput?.Invoke();
                 _currentGameState = GameState.PlayState;
                 _gameEventBus.OnStateChanged?.Invoke(_currentGameState);
             }
@@ -43,9 +48,18 @@ namespace GameCoreModule
             if (_currentGameState != GameState.PauseState)
             {
                 Time.timeScale = 0f;
+                _inputEventBus.OnDisableInput?.Invoke();
                 _currentGameState = GameState.PauseState;
                 _gameEventBus.OnStateChanged?.Invoke(_currentGameState);
             }
+        }
+
+        private void SetGameOverState()
+        {
+            Time.timeScale = 0f;
+            _inputEventBus.OnDisableInput?.Invoke();
+            _currentGameState = GameState.GameOver;
+            _gameEventBus.OnStateChanged?.Invoke(_currentGameState);
         }
 
     }

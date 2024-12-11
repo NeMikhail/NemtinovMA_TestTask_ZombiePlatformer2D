@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace PlayerModule
 {
@@ -11,6 +12,7 @@ namespace PlayerModule
         private float _damage;
         private float _cooldown;
         private float _bulletSpeed;
+        private Action _onAmmoCountChanged;
 
         public PrefabID BulletPrefabID { get => _bulletPrefabID; }
         public Sprite BulletIconSprite { get => _bulletIconSprite; }
@@ -19,6 +21,7 @@ namespace PlayerModule
         public float Damage { get => _damage; }
         public float Cooldown { get => _cooldown; }
         public float BulletSpeed { get => _bulletSpeed; }
+        public Action OnAmmoCountChanged { get => _onAmmoCountChanged; set => _onAmmoCountChanged = value; }
 
         public WeaponModel(PrefabID bulletPrefabID, Sprite bulletIconSprite, int ammoCount,
             int maxAmmoCount, float damage, float cooldown, float bulletSpeed)
@@ -30,6 +33,13 @@ namespace PlayerModule
             _damage = damage;
             _cooldown = cooldown;
             _bulletSpeed = bulletSpeed;
+        }
+
+        public void SetAmmoCount(int ammoCount)
+        {
+            _ammoCount = ammoCount;
+            OnAmmoCountChanged?.Invoke();
+
         }
 
 

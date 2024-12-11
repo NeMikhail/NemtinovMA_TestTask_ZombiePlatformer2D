@@ -1,6 +1,7 @@
 ﻿using Core.Interface;
 using GameCoreModule;
 using SO;
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -41,7 +42,20 @@ namespace PlayerModule
 
         private void SpawnPlayer()
         {
+            _gameEventBus.OnObjectSpawned += InitializePlayer;
             _gameEventBus.OnSpawnObjectWithoutRoot?.Invoke(_playerConfig.PrefabID, _playerConfig.SpawnPosition);
+            _gameEventBus.OnObjectSpawned -= InitializePlayer;
+        }
+
+        private void InitializePlayer(GameObject playerObject)
+        {
+            PlayerView playerView = playerObject.GetComponent<PlayerView>();
+            playerView.OnKilled += TriggerGameOver;
+        }
+
+        private void TriggerGameOver()
+        {
+            _gameEventBus.OnGameOver?.Invoke();
         }
     }
 }

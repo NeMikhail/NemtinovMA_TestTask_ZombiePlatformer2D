@@ -11,15 +11,17 @@ namespace PlayerModule
         private PlayerEventBus _playerEventBus;
         private PlayerModel _playerModel;
         private WeaponModel _weaponModel;
+        private AudioController _audioController;
         private PlayerState _currentState;
 
         [Inject]
         public void Construct(InputEventBus inputEventBus, PlayerEventBus playerEventBus,
-            PlayerModel playerModel)
+            PlayerModel playerModel, AudioController audioController)
         {
             _inputEventBus = inputEventBus;
             _playerEventBus = playerEventBus;
             _playerModel = playerModel;
+            _audioController = audioController;
         }
 
         public void Initialisation()
@@ -52,6 +54,7 @@ namespace PlayerModule
 
         private void ChangeState(PlayerState state)
         {
+
             _currentState = state;
             _playerEventBus.OnStateChanged?.Invoke(_currentState);
         }
@@ -65,6 +68,7 @@ namespace PlayerModule
                 _currentState != PlayerState.Shooting)
             {
                 ChangeState(PlayerState.Standing);
+                _audioController.StopSound();
             }
         }
 
@@ -73,6 +77,7 @@ namespace PlayerModule
             if (_currentState != PlayerState.Shooting)
             {
                 ChangeState(PlayerState.MovingLeft);
+                _audioController.PlayWalkingSound();
             }
         }
         private void TrySetWalkingRightState()
@@ -80,6 +85,7 @@ namespace PlayerModule
             if (_currentState != PlayerState.Shooting)
             {
                 ChangeState(PlayerState.MovingRight);
+                _audioController.PlayWalkingSound();
             }
         }
 
