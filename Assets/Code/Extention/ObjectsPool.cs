@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 namespace Extention
 {
@@ -9,18 +10,21 @@ namespace Extention
         private readonly Stack<GameObject> _stack = new Stack<GameObject>();
         private readonly GameObject _prefab;
         private readonly Transform _rootPool;
+        private readonly DiContainer _di;
 
         public Transform Root { get => _rootPool; }
         public GameObject Prefab { get => _prefab; }
 
-        public ObjectsPool(GameObject prefab)
+        public ObjectsPool(DiContainer diContainer, GameObject prefab)
         {
+            _di = diContainer;
             _prefab = prefab;
             _rootPool = new GameObject(DEFAULT_ROOT_NAME).transform;
         }
 
-        public ObjectsPool(GameObject prefab, Transform rootTransform)
+        public ObjectsPool(DiContainer diContainer, GameObject prefab, Transform rootTransform)
         {
+            _di = diContainer;
             _prefab = prefab;
             _rootPool = rootTransform;
         }
@@ -38,7 +42,7 @@ namespace Extention
             GameObject go;
             if (_stack.Count == 0)
             {
-                go = Object.Instantiate(_prefab, position, Quaternion.identity, _rootPool);
+                go = _di.InstantiatePrefab(_prefab, position, Quaternion.identity, _rootPool);
             }
             else
             {
@@ -56,7 +60,7 @@ namespace Extention
             GameObject go;
             if (_stack.Count == 0)
             {
-                go = Object.Instantiate(_prefab, position, rotation, _rootPool);
+                go = _di.InstantiatePrefab(_prefab, position, rotation, _rootPool);
             }
             else
             {

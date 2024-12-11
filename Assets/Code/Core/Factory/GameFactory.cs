@@ -1,7 +1,6 @@
 ﻿using Core.Interface;
+using GameCoreModule;
 using InputModule;
-using System;
-using UnityEngine;
 using Zenject;
 
 namespace Core
@@ -21,6 +20,7 @@ namespace Core
         public void Init()
         {
             InitializeInputModule();
+            InitializeGameCoreModule();
         }
 
         private void InitializePresenter(IPresenter presenter)
@@ -33,6 +33,16 @@ namespace Core
         {
             InputPresenter inputPresenter = _di.Resolve<InputPresenter>();
             InitializePresenter(inputPresenter);
+        }
+
+        private void InitializeGameCoreModule()
+        {
+            GameStatePresenter gameStatePresenter = _di.Resolve<GameStatePresenter>();
+            InitializePresenter(gameStatePresenter);
+            PoolsOperatorPresenter poolsOperator = _di.Resolve<PoolsOperatorPresenter>();
+            InitializePresenter(poolsOperator);
+            SpawnOperatorPresenter spawnOperator = _di.Resolve<SpawnOperatorPresenter>();
+            InitializePresenter(spawnOperator);
         }
 
 
