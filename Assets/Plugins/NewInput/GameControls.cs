@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public partial class GameControls: IInputActionCollection2, IDisposable
+public partial class GameControls : IInputActionCollection2, IDisposable
 {
     public InputActionAsset asset { get; }
     public GameControls()
@@ -110,7 +110,7 @@ public partial class GameControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""733be3f8-0f8a-41ca-b8af-8366bfa16ea2"",
-                    ""path"": ""<Keyboard>/leftAlt"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

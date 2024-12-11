@@ -7,5 +7,7 @@ public enum PrefabID
     EnemyPrefab3 = 4,
     EnemyPrefab4 = 5,
     EnemyPrefab5 = 6,
-    BulletPrefab = 7
+    BulletPrefab = 7,
+    AmmoBox = 8,
+    Canvas = 9
 }

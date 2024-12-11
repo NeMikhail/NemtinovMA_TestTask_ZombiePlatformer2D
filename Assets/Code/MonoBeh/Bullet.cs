@@ -1,6 +1,6 @@
 using UnityEngine;
 using Constants;
-using Enemy;
+using EnemyModule;
 using Extention;
 
 public class Bullet : MonoBehaviour

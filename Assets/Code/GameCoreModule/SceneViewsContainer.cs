@@ -1,7 +1,6 @@
 ﻿using Extention;
 using Core.Interface;
 using PlayerModule;
-using UnityEngine;
 using Zenject;
 using SO;
 

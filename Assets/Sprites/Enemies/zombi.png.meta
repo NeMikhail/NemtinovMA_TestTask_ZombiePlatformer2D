@@ -157,7 +157,7 @@ TextureImporter:
         width: 67
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 67
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 67
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 68
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +241,7 @@ TextureImporter:
         width: 75
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +262,7 @@ TextureImporter:
         width: 72
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +283,7 @@ TextureImporter:
         width: 72
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,7 +304,7 @@ TextureImporter:
         width: 72
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +325,7 @@ TextureImporter:
         width: 72
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +346,7 @@ TextureImporter:
         width: 72
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,7 +367,7 @@ TextureImporter:
         width: 72
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +388,7 @@ TextureImporter:
         width: 72
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +409,7 @@ TextureImporter:
         width: 74
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +430,7 @@ TextureImporter:
         width: 72
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,7 +451,7 @@ TextureImporter:
         width: 74
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,7 +472,7 @@ TextureImporter:
         width: 69
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,7 +493,7 @@ TextureImporter:
         width: 68
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,6 +501,1245 @@ TextureImporter:
       bones: []
       spriteID: f321d073c5e7cc64091da752d5d11720
       internalID: -1563818934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 421
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbf928a570228c4889bbb1eb16e0249
+      internalID: 1126684172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 421
+        width: 70
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350b6b51fe508634c8feb17a7220bdea
+      internalID: -217474493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_19
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 420
+        width: 70
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfcbd5f2ce2b4d4295b435a7d1e757c
+      internalID: -1414359077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_20
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 420
+        width: 70
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9a4b977d6c71f4ca36c2227c9fd5ac
+      internalID: -306086803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_21
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 421
+        width: 73
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7654722d48756de4b98bb1b36036d6b7
+      internalID: 952131854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_22
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 421
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6430f9f7965284b935648d32f187f5
+      internalID: 177432887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_23
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 422
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c101e2f62d72d84aa243d4d0d7b6379
+      internalID: 567014628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_24
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 421
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35ac05594736c54ba983b5efe4d38c4
+      internalID: -1783546453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_25
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 422
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45cdc1c4f34200468ccf35cfc9ec489
+      internalID: 1251012631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_26
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 420
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b3a7964cd118b46a4d0260176cf648
+      internalID: -797813190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_27
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 420
+        width: 69
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc14c35597c65f4ea5d2b4b677ef3ac
+      internalID: 444742533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_28
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 420
+        width: 69
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d9ba08152be8d4bbc976879f077e02
+      internalID: -315664668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_29
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 420
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d508773d4eb90643b481450773d7cce
+      internalID: 252428665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 421
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1739be3335826428674e3823f797a9
+      internalID: 1431523357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_31
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 420
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258134f928e85954383c47936b8fe588
+      internalID: -2051585095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_32
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 420
+        width: 72
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4672abf09b76a34397b6c2fc4ebfc5e
+      internalID: 545720024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_33
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 281
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cded95aeadc6949a8e1763bd38f895
+      internalID: 1637128143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_34
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 280
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a859dbde9a470a24abb56361aff70ee3
+      internalID: -314213909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_35
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 280
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6d10643c01c6e48bcf8037ca869085
+      internalID: -995748475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_36
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 280
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dc346c6adbdc348a265bc773e75735
+      internalID: 474493217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_37
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 279
+        width: 71
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ee90a31b3d8864aaf0ed458abcb4ef
+      internalID: 1108572069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_38
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 278
+        width: 71
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad9c1fdb42a1c54e9dccc96b7344e48
+      internalID: -1754169412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_39
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 278
+        width: 71
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110164ae4ddc95b4b9707a36a63f41b6
+      internalID: 1812523644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_40
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 278
+        width: 71
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23b136ea1455904eae20e71a3bc28a3
+      internalID: 1641158697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_41
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 279
+        width: 71
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993ae160ebe1783499597be612c593af
+      internalID: 1143887695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_42
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 278
+        width: 63
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c81f83531ec1f459550cc6d3abac2c
+      internalID: 2028539838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_43
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 280
+        width: 67
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc3eed4e7dac3442b192e1f1a53a7a9
+      internalID: 599757332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_44
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 279
+        width: 67
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d3624b48410a14c9d04e3e6867c51b
+      internalID: -1031847230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_45
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 278
+        width: 67
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e7189380eab1045ad1ef819cb16d15
+      internalID: -634373164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_46
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 280
+        width: 67
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250ecced6271f2645a2ff1c38addff16
+      internalID: 1913413069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_47
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 278
+        width: 67
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657799fb36af7cd469d117e04d4aa96e
+      internalID: -1868041065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_48
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 280
+        width: 67
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7873fe6ec64fe448ff54aefba73961
+      internalID: -1593283281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_49
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 137
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4128ca8430d2fb740abdaa2929a227f1
+      internalID: -516971219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_50
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 136
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcda8084a1f6214096b907630c2e671
+      internalID: 896517814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_51
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 135
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ebc6e8ea5170a4bb3ae71bcfaa3b68
+      internalID: -614935286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_52
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 135
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1124bf3b72caf4e99c457f02eaf63a
+      internalID: -503341469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_53
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 135
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445293600d3b3134d98ec7227eeaa993
+      internalID: 1419782226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_54
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 135
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5343eab4e108dd4cb9743cef3c58be1
+      internalID: 270214068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_55
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 135
+        width: 67
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1aaf6fddf0bc345890109c8f6b015c
+      internalID: 1269886473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_56
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 135
+        width: 60
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751c8f67803d15a4dbe14baa4e1c7dc1
+      internalID: 591415190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_57
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 135
+        width: 65
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da61da3013c0f94895f9bc9e9dbc0b0
+      internalID: -1723618168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_58
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 135
+        width: 65
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae64b56fc39a7b42a23211bd1f608e6
+      internalID: 1740209491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_59
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 136
+        width: 58
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03da445b3fee5046a32b3f61ee51fc4
+      internalID: -1330767400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_60
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 137
+        width: 62
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7705162909c3e540882f5dc001ebf98
+      internalID: 913428167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_61
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 138
+        width: 66
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155561ebf408831438c1b068e6d8e330
+      internalID: 771143675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_62
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 136
+        width: 62
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156eb70cb8626934fb739496ebbe72ef
+      internalID: -1886671341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_63
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 136
+        width: 65
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b23aedf5026dc04cbb664c6b4790a9c
+      internalID: 101048563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_64
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 136
+        width: 65
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d34b98eb1f13e842bdfa3b26ba1c1e9
+      internalID: -865071726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_65
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 11
+        width: 86
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac43400c38137448906b61bc5023155
+      internalID: 482849023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_66
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 10
+        width: 86
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fe57c6c7da5b74d84b992cf38ceb18
+      internalID: -625190168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_67
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 11
+        width: 86
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94194c5e9cc54494b986bd6df49a9d9c
+      internalID: 1619728292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_68
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 8
+        width: 86
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9643b0d7921f7a741bee3e8ca7efbe14
+      internalID: -1918104925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_69
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 10
+        width: 86
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2104dca670a60b40a320640056c65ab
+      internalID: 1124845223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_70
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 15
+        width: 94
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d04816a20f5c3408acc423be79528f
+      internalID: 1156354900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_71
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 15
+        width: 94
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15625b020abbdc14ba54000cfd579bec
+      internalID: 1016400213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_72
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 10
+        width: 86
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94f5301d2d042b49be1d79c5c7439ee
+      internalID: 1452625308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_73
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 10
+        width: 86
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517715578a6874f4f840c6934b848308
+      internalID: -807500970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_74
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 10
+        width: 84
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af9a5c94b1355944af9d6dbf8046a5d
+      internalID: 1904006010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombi_75
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 11
+        width: 86
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00259ff50a77ba439462b366bb432e1
+      internalID: 1537327976
       vertices: []
       indices: 
       edges: []
@@ -525,12 +1764,71 @@ TextureImporter:
       zombi_14: 52540593
       zombi_15: 934389663
       zombi_16: -1563818934
+      zombi_17: 1126684172
+      zombi_18: -217474493
+      zombi_19: -1414359077
       zombi_2: -1462452167
+      zombi_20: -306086803
+      zombi_21: 952131854
+      zombi_22: 177432887
+      zombi_23: 567014628
+      zombi_24: -1783546453
+      zombi_25: 1251012631
+      zombi_26: -797813190
+      zombi_27: 444742533
+      zombi_28: -315664668
+      zombi_29: 252428665
       zombi_3: 258169988
+      zombi_30: 1431523357
+      zombi_31: -2051585095
+      zombi_32: 545720024
+      zombi_33: 1637128143
+      zombi_34: -314213909
+      zombi_35: -995748475
+      zombi_36: 474493217
+      zombi_37: 1108572069
+      zombi_38: -1754169412
+      zombi_39: 1812523644
       zombi_4: 555422374
+      zombi_40: 1641158697
+      zombi_41: 1143887695
+      zombi_42: 2028539838
+      zombi_43: 599757332
+      zombi_44: -1031847230
+      zombi_45: -634373164
+      zombi_46: 1913413069
+      zombi_47: -1868041065
+      zombi_48: -1593283281
+      zombi_49: -516971219
       zombi_5: -1962556621
+      zombi_50: 896517814
+      zombi_51: -614935286
+      zombi_52: -503341469
+      zombi_53: 1419782226
+      zombi_54: 270214068
+      zombi_55: 1269886473
+      zombi_56: 591415190
+      zombi_57: -1723618168
+      zombi_58: 1740209491
+      zombi_59: -1330767400
       zombi_6: 797494670
+      zombi_60: 913428167
+      zombi_61: 771143675
+      zombi_62: -1886671341
+      zombi_63: 101048563
+      zombi_64: -865071726
+      zombi_65: 482849023
+      zombi_66: -625190168
+      zombi_67: 1619728292
+      zombi_68: -1918104925
+      zombi_69: 1124845223
       zombi_7: 5455526
+      zombi_70: 1156354900
+      zombi_71: 1016400213
+      zombi_72: 1452625308
+      zombi_73: -807500970
+      zombi_74: 1904006010
+      zombi_75: 1537327976
       zombi_8: 860386461
       zombi_9: 611256858
   mipmapLimitGroupName: 

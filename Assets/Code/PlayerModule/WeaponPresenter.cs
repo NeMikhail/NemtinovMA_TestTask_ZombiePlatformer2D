@@ -34,11 +34,13 @@ namespace PlayerModule
             _playerView = _sceneViewsContainer.GetPlayerView();
             InitializeWeapon(_playerModel.WeaponModel);
             _playerEventBus.OnStateChanged += ChangeState;
+            _playerView.OnAmmoAdded += AddAmmo;
         }
 
         public void Cleanup()
         {
             _playerEventBus.OnStateChanged -= ChangeState;
+            _playerView.OnAmmoAdded -= AddAmmo;
         }
 
         public void FixedExecute(float fixedDeltaTime)
@@ -55,6 +57,16 @@ namespace PlayerModule
         {
             _weaponModel = weaponModel;
             _timer = new Timer(_playerModel.WeaponModel.Cooldown, false);
+        }
+
+
+        private void AddAmmo(int ammoCount)
+        {
+            _weaponModel.AmmoCount = _weaponModel.AmmoCount + ammoCount;
+            if (_weaponModel.AmmoCount > _weaponModel.MaxAmmoCount)
+            {
+                _weaponModel.AmmoCount = _weaponModel.MaxAmmoCount;
+            }
         }
 
         public void ChangeState(PlayerState playerState)

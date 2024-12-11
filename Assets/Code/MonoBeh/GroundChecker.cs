@@ -1,3 +1,4 @@
+using Constants;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,8 +12,12 @@ public class GroundChecker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        IsGrounded = true;
-        _groundObjects.Add(collision.gameObject);
+        if (collision.gameObject.tag != TagsConstantsManager.ENEMY_TAG &&
+            collision.gameObject.tag != TagsConstantsManager.SPAWNER_TAG)
+        {
+            IsGrounded = true;
+            _groundObjects.Add(collision.gameObject);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

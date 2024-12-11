@@ -25,7 +25,11 @@ namespace GameCoreModule
             _poolsDict = new SerializableDictionary<PrefabID, IPool>();
             InitializePool(PrefabID.BulletPrefab);
             InitializePool(PrefabID.EnemyPrefab1);
-            
+            InitializePool(PrefabID.EnemyPrefab2);
+            InitializePool(PrefabID.EnemyPrefab3);
+            InitializePool(PrefabID.EnemyPrefab4);
+            InitializePool(PrefabID.EnemyPrefab5);
+            InitializePool(PrefabID.AmmoBox);
         }
 
         private void InitializePool(PrefabID prefabID)

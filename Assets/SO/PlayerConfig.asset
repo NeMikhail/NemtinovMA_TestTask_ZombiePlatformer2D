@@ -15,6 +15,6 @@ MonoBehaviour:
   _spawnPosition: {x: -4, y: -5.5, z: 0}
   _prefabID: 1
   _health: 100
-  _speed: 5
+  _speed: 8
   _jumpForce: 500
   _weaponConfig: {fileID: 11400000, guid: ad86b6e190b4ae94dbe4774cbc326aa7, type: 2}
