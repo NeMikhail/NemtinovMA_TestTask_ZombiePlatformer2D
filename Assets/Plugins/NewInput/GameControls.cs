@@ -15,10 +15,10 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public partial class @GameControls: IInputActionCollection2, IDisposable
+public partial class GameControls: IInputActionCollection2, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @GameControls()
+    public GameControls()
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""Controls"",
@@ -110,7 +110,7 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""733be3f8-0f8a-41ca-b8af-8366bfa16ea2"",
-                    ""path"": ""<Mouse>/leftButton"",
+                    ""path"": ""<Keyboard>/leftAlt"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -209,8 +209,8 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_GameInput_Pause;
     public struct GameInputActions
     {
-        private @GameControls m_Wrapper;
-        public GameInputActions(@GameControls wrapper) { m_Wrapper = wrapper; }
+        private GameControls m_Wrapper;
+        public GameInputActions(GameControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @MoveLeft => m_Wrapper.m_GameInput_MoveLeft;
         public InputAction @MoveRight => m_Wrapper.m_GameInput_MoveRight;
         public InputAction @Jump => m_Wrapper.m_GameInput_Jump;

@@ -88,7 +88,7 @@
                 {
                     "name": "",
                     "id": "733be3f8-0f8a-41ca-b8af-8366bfa16ea2",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Keyboard>/leftAlt",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabsDict:
     Dictionary:
+    - Key: 1
+      Value: {fileID: 5338834697925479655, guid: dc92584d847245641a151d9c9298468e, type: 3}
     - Key: 2
       Value: {fileID: 1659854921231613996, guid: f53fa15c7685dca4093fc71712e0e379, type: 3}
+    - Key: 3
+      Value: {fileID: 1659854921231613996, guid: f53fa15c7685dca4093fc71712e0e379, type: 3}
+    - Key: 7
+      Value: {fileID: 5435491058616494645, guid: f308898e5740fe747a47ef76b02e7276, type: 3}

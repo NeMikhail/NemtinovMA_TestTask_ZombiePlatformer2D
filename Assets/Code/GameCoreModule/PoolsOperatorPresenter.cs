@@ -37,13 +37,16 @@ namespace GameCoreModule
         public void SpawnObject(PrefabID prefabID, Vector3 position)
         {
             IPool pool = _poolsContainer.PoolsDict.GetValue(prefabID);
-            pool.Pop(position);
+            GameObject go = pool.Pop(position);
+            _gameEventBus.OnObjectSpawnedFromPool?.Invoke(go, pool);
+
         }
 
         public void SpawnObject(PrefabID prefabID, Vector3 position, Quaternion rotation)
         {
             IPool pool = _poolsContainer.PoolsDict.GetValue(prefabID);
-            pool.Pop(position, rotation);
+            GameObject go = pool.Pop(position, rotation);
+            _gameEventBus.OnObjectSpawnedFromPool?.Invoke(go, pool);
         }
 
     }

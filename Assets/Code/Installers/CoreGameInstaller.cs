@@ -13,6 +13,7 @@ public class CoreGameInstaller : MonoInstaller
         Container.Bind<GameFactory>().AsSingle();
 
         Container.Bind<GameEventBus>().AsSingle();
+        Container.Bind<SceneViewsContainer>().AsSingle();
         Container.Bind<PrefabsContainer>().FromInstance(_prefabsContainer).AsSingle();
         Container.Bind<GameStatePresenter>().AsSingle();
         Container.Bind<PoolsContainer>().AsSingle();

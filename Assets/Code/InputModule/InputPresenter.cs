@@ -1,4 +1,5 @@
 using Core.Interface;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
@@ -32,9 +33,12 @@ namespace InputModule
         {
             var gameInput = _controls.GameInput;
             gameInput.MoveLeft.performed += InvokeMoveLeftEvent;
+            gameInput.MoveLeft.canceled += InvokeMoveLeftCanceledEvent;
             gameInput.MoveRight.performed += InvokeMoveRightEvent;
+            gameInput.MoveRight.canceled += InvokeMoveRightCanceledEvent;
             gameInput.Jump.performed += InvokeJumpEvent;
             gameInput.Shoot.performed += InvokeShootEvent;
+            gameInput.Shoot.canceled += InvokeShootCanceledEvent;
             gameInput.Pause.performed += InvokePauseEvent;
         }
 
@@ -42,9 +46,12 @@ namespace InputModule
         {
             var gameInput = _controls.GameInput;
             gameInput.MoveLeft.performed -= InvokeMoveLeftEvent;
+            gameInput.MoveLeft.canceled -= InvokeMoveLeftCanceledEvent;
             gameInput.MoveRight.performed -= InvokeMoveRightEvent;
+            gameInput.MoveRight.canceled -= InvokeMoveRightCanceledEvent;
             gameInput.Jump.performed -= InvokeJumpEvent;
             gameInput.Shoot.performed -= InvokeShootEvent;
+            gameInput.Shoot.canceled -= InvokeShootCanceledEvent;
             gameInput.Pause.performed -= InvokePauseEvent;
         }
 
@@ -52,9 +59,17 @@ namespace InputModule
         {
             _inputEventBus.OnWalkLeftButtonDown?.Invoke();
         }
+        private void InvokeMoveLeftCanceledEvent(InputAction.CallbackContext obj)
+        {
+            _inputEventBus.OnWalkLeftButtonUp?.Invoke();
+        }
         private void InvokeMoveRightEvent(InputAction.CallbackContext obj)
         {
             _inputEventBus.OnWalkRightButtonDown?.Invoke();
+        }
+        private void InvokeMoveRightCanceledEvent(InputAction.CallbackContext obj)
+        {
+            _inputEventBus.OnWalkRightButtonUp?.Invoke();
         }
         private void InvokeJumpEvent(InputAction.CallbackContext obj)
         {
@@ -63,6 +78,10 @@ namespace InputModule
         private void InvokeShootEvent(InputAction.CallbackContext obj)
         {
             _inputEventBus.OnShootButtonDown?.Invoke();
+        }
+        private void InvokeShootCanceledEvent(InputAction.CallbackContext obj)
+        {
+            _inputEventBus.OnShootButtonUp?.Invoke();
         }
         private void InvokePauseEvent(InputAction.CallbackContext obj)
         {
